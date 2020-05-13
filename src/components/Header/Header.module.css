@@ -1,0 +1,26 @@
+.nav_l{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #fff;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.logo{
+    border: 3px solid black;
+    width: 50px;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 450px;
+}
+.h_link{
+    color: black;
+    padding: 20px 50px 20px 50px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+.h_link:last-child{
+    margin-left: 300px;
+}

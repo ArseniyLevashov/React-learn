@@ -1,0 +1,42 @@
+.ft{
+    background: black;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+footer h4{
+    margin-left: 40px;
+    color: white;
+}
+.footer_links{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 90px;
+}
+
+.footer_link{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_link p{
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #919eb1;
+    margin-bottom: 35px;
+}
+
+.footer_links_logo{
+    font-size: 25px;
+    margin-right: 26%;
+}
+
+.footer_link a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.footer_link a:hover{
+    opacity: 0.6;
+}
