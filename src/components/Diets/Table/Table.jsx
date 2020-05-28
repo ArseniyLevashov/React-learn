@@ -33,6 +33,7 @@ const Table = (props) =>{
             <th>Weight</th>
             <th>Diferent</th>
             <th className={s.note}>Notes</th>
+            <th>Edit/Delete</th>
         </tr>
         <tbody>
             {props.users.length > 0 ? (
@@ -40,6 +41,9 @@ const Table = (props) =>{
                 <tr key={user.id}>
                     <td>{user.name}</td>
                     <td>{user.username}</td>
+                    <td>{user.weight}</td>
+                    <td>{user.Different}</td>
+                    <td>{user.Notes}</td>
                     <td>
                     <button onClick={() => { props.editRow(user) }}
                   className="button muted-button">Edit</button>

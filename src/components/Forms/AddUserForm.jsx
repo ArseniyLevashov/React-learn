@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import s from "./AddUser.module.css";
 
 const AddUserForm = props => {
     const initialFormState = { id: null, name: '', username: '' }
@@ -22,7 +23,7 @@ const AddUserForm = props => {
     
   return (
     <form onSubmit={handleSubmit}>
-      <label>Name</label>
+      <label>Day(name)</label>
       <input
         type="text"
         name="name"
@@ -36,7 +37,21 @@ const AddUserForm = props => {
         value={user.username}
         onChange={handleInputChange}
       />
-      <button>Add new user</button>
+      <label>weight</label>
+      <input
+        type="text"
+        name="weight"
+        value={user.weight}
+        onChange={handleInputChange}
+      />
+      <label>Notes</label>
+      <input
+        type="textarea"
+        name="Notes"
+        value={user.Notes}
+        onChange={handleInputChange}
+      />
+      <button>Add new Day</button>
     </form>
   )
 }

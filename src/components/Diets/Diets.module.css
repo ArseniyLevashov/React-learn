@@ -9,9 +9,14 @@
     background-color: rgb(86, 148, 24);
     color: white;
 }
-.add_diet h1{
+.add_diet h1, h2{
     text-align: center;
 }
 .add_diet p{
     text-align: center;
+}
+.block_flex{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
 }

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import s from "./AddUser.module.css";
 
 const EditUserForm = props => {
   // в качестве начального аргумента передаем
@@ -44,14 +45,27 @@ const EditUserForm = props => {
         value={user.username}
         onChange={handleInputChange}
       />
-      <button>Update user</button>
-      <button
-        /* обновляем флаг editing, будет представлен в App позже */
-        onClick={() => props.setEditing(false)}
-        className="button muted-button"
-      >
-        Cancel
-      </button>
+       <label>weight</label>
+      <input
+        type="text"
+        name="weight"
+        value={user.weight}
+        onChange={handleInputChange}
+      />
+       <label>Notes</label>
+      <input
+        type="text"
+        name="Notes"
+        value={user.Notes}
+        onChange={handleInputChange}
+      />
+      <div className={s.buttons_mrg}>
+        <button>Update user</button>
+        <button
+            /* обновляем флаг editing, будет представлен в App позже */
+            onClick={() => props.setEditing(false)}
+            className="button muted-button">Cancel</button>
+      </div>
     </form>
   )
 }

@@ -29,7 +29,7 @@ const Diets = (props) =>{
     setEditing(false)
     setUsers(users.filter(user => user.id !== id))
   }
-  
+
   // обновление пользователя
   const updateUser = (id, updatedUser) => {
     // когда мы готовы обновить пользователя, ставим флажок editing в false
@@ -52,6 +52,9 @@ const Diets = (props) =>{
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
         At magni debitis, tempore fugit obcaecati perspiciatis
         aliquid corporis eos non ad!</p>
+
+
+        <div className={s.block_flex}>
         <div>
               <h2>Edit user</h2>
               <EditUserForm
@@ -61,11 +64,15 @@ const Diets = (props) =>{
                 updateUser={updateUser}
               />
             </div>
-        {/* передаем deleteUser */}
-        <h2>Add user</h2>
-       <AddUserForm addUser={addUser} />
+          <div>
+            <h2>Add day</h2>
+            <AddUserForm addUser={addUser} />
+          </div>
 
-      <Table users={users} editRow={editRow} deleteUser={deleteUser}/>
+          </div>
+
+          {/* передаем deleteUser */}
+          <Table users={users} editRow={editRow} deleteUser={deleteUser}/>
 </section>
 }
 
