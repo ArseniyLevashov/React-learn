@@ -23,14 +23,14 @@ const AddUserForm = props => {
     
   return (
     <form onSubmit={handleSubmit}>
-      <label>Day(name)</label>
+      <label>Day</label>
       <input
         type="text"
         name="name"
         value={user.name}
         onChange={handleInputChange}
       />
-      <label>Username</label>
+      <label>Date</label>
       <input
         type="text"
         name="username"
@@ -51,7 +51,7 @@ const AddUserForm = props => {
         value={user.Notes}
         onChange={handleInputChange}
       />
-      <button>Add new Day</button>
+      <button className={s.buttons_mrg}>Add new Day</button>
     </form>
   )
 }

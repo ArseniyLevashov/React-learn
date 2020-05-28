@@ -31,14 +31,14 @@ const EditUserForm = props => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label>Name</label>
+      <label>Day</label>
       <input
         type="text"
         name="name"
         value={user.name}
         onChange={handleInputChange}
       />
-      <label>Username</label>
+      <label>Date</label>
       <input
         type="text"
         name="username"
